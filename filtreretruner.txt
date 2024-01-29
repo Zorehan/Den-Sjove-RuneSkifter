@@ -1,0 +1,1 @@
+[{"name":"Domination","id":8100,"key":"Domination"},{"name":"Inspiration","id":8300,"key":"Inspiration"},{"name":"Precision","id":8000,"key":"Precision"},{"name":"Resolve","id":8400,"key":"Resolve"},{"name":"Sorcery","id":8200,"key":"Sorcery"}]
