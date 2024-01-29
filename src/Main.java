@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
+import java.util.HashMap;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -26,11 +27,86 @@ public class Main {
     private static String decodedPassword;
     private static String currentRunePageId;
 
+    private static HashMap<String, Integer> runeIdMap = new HashMap<>();
+
+        public Main()
+        {
+            runeIdMap.put("Domination", 8100);
+            runeIdMap.put("Electrocute", 8112);
+            runeIdMap.put("Predator", 8124);
+            runeIdMap.put("Dark Harvest", 8128);
+            runeIdMap.put("Hail of Blades", 9923);
+            runeIdMap.put("Cheap Shot", 8126);
+            runeIdMap.put("Taste of Blood", 8139);
+            runeIdMap.put("Sudden Impact", 8143);
+            runeIdMap.put("Zombie Ward", 8136);
+            runeIdMap.put("Ghost Poro", 8120);
+            runeIdMap.put("Eye Ball Collection", 8138);
+            runeIdMap.put("Treasure Hunter", 8135);
+            runeIdMap.put("Ingenious Hunter", 8134);
+            runeIdMap.put("Relentless Hunter", 8105);
+            runeIdMap.put("Ultimate Hunter", 8106);
+            runeIdMap.put("Inspiration", 8300);
+            runeIdMap.put("Glacial Augment", 8351);
+            runeIdMap.put("Unsealed Spellbook", 8360);
+            runeIdMap.put("First Strike", 8369);
+            runeIdMap.put("Hextech Flashtraption", 8306);
+            runeIdMap.put("Magical Footwear", 8304);
+            runeIdMap.put("Perfect Timing", 8313);
+            runeIdMap.put("Future's Market", 8321);
+            runeIdMap.put("Minion Dematerializer", 8316);
+            runeIdMap.put("Biscuit Delivery", 8345);
+            runeIdMap.put("Cosmic Insight", 8347);
+            runeIdMap.put("Approach Velocity", 8410);
+            runeIdMap.put("Time Warp Tonic", 8352);
+            runeIdMap.put("Precision", 8000);
+            runeIdMap.put("Press the Attack", 8005);
+            runeIdMap.put("Lethal Tempo", 8008);
+            runeIdMap.put("Fleet Footwork", 8021);
+            runeIdMap.put("Conqueror", 8010);
+            runeIdMap.put("Overheal", 9101);
+            runeIdMap.put("Triumph", 9111);
+            runeIdMap.put("Presence of Mind", 8009);
+            runeIdMap.put("Legend: Alacrity", 9104);
+            runeIdMap.put("Legend: Tenacity", 9105);
+            runeIdMap.put("Legend: Bloodline", 9103);
+            runeIdMap.put("Coup de Grace", 8014);
+            runeIdMap.put("Cut Down", 8017);
+            runeIdMap.put("Last Stand", 8299);
+            runeIdMap.put("Resolve", 8400);
+            runeIdMap.put("Grasp of the Undying", 8437);
+            runeIdMap.put("Aftershock", 8439);
+            runeIdMap.put("Guardian", 8465);
+            runeIdMap.put("Demolish", 8446);
+            runeIdMap.put("Font of Life", 8463);
+            runeIdMap.put("Shield Bash", 8401);
+            runeIdMap.put("Conditioning", 8429);
+            runeIdMap.put("Second Wind", 8444);
+            runeIdMap.put("Bone Plating", 8473);
+            runeIdMap.put("Overgrowth", 8451);
+            runeIdMap.put("Revitalize", 8453);
+            runeIdMap.put("Unflinching", 8242);
+            runeIdMap.put("Sorcery", 8200);
+            runeIdMap.put("Summon Aery", 8214);
+            runeIdMap.put("Arcane Comet", 8229);
+            runeIdMap.put("Phase Rush", 8230);
+            runeIdMap.put("Nullifying Orb", 8224);
+            runeIdMap.put("Manaflow Band", 8226);
+            runeIdMap.put("Nimbus Cloak", 8275);
+            runeIdMap.put("Transcendence", 8210);
+            runeIdMap.put("Celerity", 8234);
+            runeIdMap.put("Absolute Focus", 8233);
+            runeIdMap.put("Scorch", 8237);
+            runeIdMap.put("Waterwalking", 8232);
+            runeIdMap.put("Gathering Storm", 8236);
+        }
+
     public static void main(String[] args) throws IOException, InterruptedException, NoSuchAlgorithmException, KeyManagementException {
         String ladosse = runCommand("wmic PROCESS WHERE name='LeagueClientUx.exe' GET commandline");
         String filePath = "filtreretruner.txt";
         Scanner scanner = new Scanner(System.in);
         System.out.println("Type 1 to get information");
+        System.out.println();
         String userInput = scanner.nextLine();
         if(Integer.parseInt(userInput) == 1)
         {
@@ -47,6 +123,13 @@ public class Main {
             authToken = searchForAuthToken(ladosse);
             decodedPassword = encoder.encodeToBase64(authToken);
             deleteRunePage(decodedPassword, currentRunePageId);
+        }
+        else if (Integer.parseInt(userInput) == 3)
+        {
+            port = searchForPort(ladosse);
+            authToken = searchForAuthToken(ladosse);
+            decodedPassword = encoder.encodeToBase64(authToken);
+            injectRunePage("Gerg", decodedPassword);
         }
 //xd
         }
@@ -87,7 +170,6 @@ public class Main {
                 .method("GET", HttpRequest.BodyPublishers.noBody())
                 .build();
         HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
-        System.out.println(extractRunePageID(response.body()));
         currentRunePageId = extractRunePageID(response.body());
         return response.body();
     }
@@ -213,7 +295,47 @@ public class Main {
             int id = originalObject.getInt("id");
 
             return String.valueOf(id);
+    }
 
+
+    public static void injectRunePage(String runepageName, String authentication) throws NoSuchAlgorithmException, KeyManagementException, IOException, InterruptedException {
+        String apiBaseURL = "https://EUW1.api.riotgames.com";
+        String endPoint = "/lol-perks/v1/pages";
+        String fullurl = apiBaseURL + endPoint;
+
+        SSLContext sslContext = SSLContext.getInstance("TLS");
+        sslContext.init(null, TrustManagerUtils.getTrustManagers(), null);
+
+        HttpClient httpClient = HttpClient.newBuilder()
+                .sslContext(sslContext)
+                .build();
+
+        String requestBody = "{" +
+                "\"current\": true," +
+                "\"name\": \"" + runepageName + "\"," +
+                "\"primaryStyleId\": " + 8100 + "," +
+                "\"selectedPerkIds\": [" +
+                8112 + "," +
+                8216 + "," +
+                8138 + "," +
+                8135 + "," +
+                9101 + "," +
+                8014 +
+                "]," +
+                "\"subStyleId\": " + 8000 +
+                "}";
+        HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create("https://127.0.0.1:" + port +"/lol-perks/v1/pages"))
+                .header("accept", "application/json")
+                .header("Authorization", "Basic" + authentication)
+                .header("Content-Type", "application/json")
+                .method("POST", HttpRequest.BodyPublishers.ofString(requestBody))
+                .build();
+
+        HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
+
+        System.out.println("Response code: " + response.statusCode());
+        System.out.println("Response Body: " + response.body());
     }
     }
 
