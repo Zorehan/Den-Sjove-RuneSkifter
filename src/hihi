@@ -1,0 +1,58 @@
+C:/Riot Games/League of Legends/LeagueClientUx.exe" "--riotclient-auth-token=Zi4TjI5QHujOUSY0X1KneQ" "
+            --riotclient-app-port=52227" "--no-rads" "--disable-self-update" "--region=EUW" "--locale=en_GB" "
+            --riotgamesapi-standalone" "--riotgamesapi-settings=eyJjbGllbnQtY29uZmlnIjp7InVybCI6Imh0dHBzOi8vY2xpZW50Y29uZmlnLnJwZy5yaW90Z2FtZXMuY29tIn0sImRlZmF1bHRfcmVnaW9uIjoiRVVXIiwiZ2xvYmFscyI6eyJzZXNzaW9uLWlkIjoiYzQzMjE3ZDItNzU3MS0wMDRkLWI3ZDctNGI4MTdlMTc1NDUzIn0sInBhdGNobGluZV9pZCI6ImxpdmUiLCJwcm9kdWN0LWludGVncmF0aW9uIjp7ImFwcC11cGRhdGUtc3RhdHVzIjoiQzovUHJvZ3JhbURhdGEvUmlvdCBHYW1lcy9NZXRhZGF0YS9sZWFndWVfb2ZfbGVnZW5kcy5saXZlL2xlYWd1ZV9vZl9sZWdlbmRzLmxpdmUudXBkYXRlLXN0YXR1cy5qc29uIiwiaGVhcnRiZWF0IjoiQzovVXNlcnMva2FkYXIvQXBwRGF0YS9Mb2NhbC9SaW90IEdhbWVzL1Jpb3QgQ2xpZW50L0RhdGEvU2Vzc2lvbnMvYzQzMjE3ZDItNzU3MS0wMDRkLWI3ZDctNGI4MTdlMTc1NDUzL1ppNFRqSTVRSHVqT1VTWTBYMUtuZVEuaGVhcnRiZWF0Lmpzb24iLCJsb2NrZmlsZSI6IkM6L1Byb2dyYW1EYXRhL1Jpb3QgR2FtZXMvTWV0YWRhdGEvbGVhZ3VlX29mX2xlZ2VuZHMubGl2ZS9sZWFndWVfb2ZfbGVnZW5kcy5saXZlLmxvY2tmaWxlIiwic2V0dGluZ3MiOiJDOi9Qcm9ncmFtRGF0YS9SaW90IEdhbWVzL01ldGFkYXRhL2xlYWd1ZV9vZl9sZWdlbmRzLmxpdmUvbGVhZ3VlX29mX2xlZ2VuZHMubGl2ZS5wcm9kdWN0X3NldHRpbmdzLnlhbWwifSwicHJvZHVjdF9pZCI6ImxlYWd1ZV9vZl9sZWdlbmRzIiwicHVibGlzaGVyIjoicmlvdCIsInJlZ2lvbl9kYXRhIjp7IkVVVyI6eyJhdmFpbGFibGVfbG9jYWxlcyI6WyJjc19DWiIsImRlX0RFIiwiZWxfR1IiLCJlbl9BVSIsImVuX0dCIiwiZW5fUEgiLCJlbl9TRyIsImVuX1VTIiwiZXNfQVIiLCJlc19FUyIsImVzX01YIiwiZnJfRlIiLCJodV9IVSIsIml0X0lUIiwiamFfSlAiLCJrb19LUiIsInBsX1BMIiwicHRfQlIiLCJyb19STyIsInJ1X1JVIiwidGhfVEgiLCJ0cl9UUiIsInZpX1ZOIiwiemhfTVkiLCJ6aF9UVyJdLCJkZWZhdWx0X2xvY2FsZSI6ImVuX0dCIiwicnNvIjp7ImNsaWVudCI6ImxvbCJ9fX0sInJpb3RjbGllbnQiOnsiYXBwLXBvcnQiOiI1MjIyNyIsImF1dGgtdG9rZW4iOiJaaTRUakk1UUh1ak9VU1kwWDFLbmVRIn0sInJpb3RnYW1lc2FwaSI6eyJwZXJzaXN0ZW5jZS1wYXRoIjoiQzovVXNlcnMva2FkYXIvQXBwRGF0YS9Mb2NhbC9SaW90IEdhbWVzL0xlYWd1ZSBvZiBMZWdlbmRzIn0sInJzb19hdXRoIjp7ImF1dGhvcml6YXRpb24ta2V5IjoiZXcwS0lDQWdJQ0pqYjJSbElqb2dJbHBYVFhoUGFrWkhUVzVhZG1OVmREUmxSbVF3WVROa1lWcElXbUZoVkVKNFlqRkZkV0ZFU1RWYVJVNTVXbGM1VW1Wc09ERlhSV3cyVDFac2FHSkhVVFJSVVQwOUlpd05DaUFnSUNBaVkyOWtaVjkyWlhKcFptbGxjaUk2SUNKdFpHcHZZV1JmT1VFMVpIcGhaMTlVYWtzeVNrcG9ka3R1VG1adFVqUm1NREJ3Wm5Cb05rUXhZa1V3UzFsU2RXeDZZMHh4UWxVeGJIQkJTRE5xV0doMFZrZzJObEpCWlVGNE5VWjZVek5pTkRNeE1sUndRU0lOQ24wPSJ9fQ==" "
+            --rga-lite" "--remoting-auth-token=1OgZLdWsTGNUIKKw250hVA" "--respawn-command=LeagueClient.exe" "
+            --respawn-display-name=League of Legends" "--app-port=52367" "--install-directory=C:\Riot Games\League of Legends" "
+            --app-name=LeagueClient" "--ux-name=LeagueClientUx" "--ux-helper-name=LeagueClientUxHelper" "--log-dir=LeagueClient Logs" "
+            --crash-reporting=crashpad" "--crash-environment=EUW1" "--crash-pipe=\\.\pipe\crashpad_26232_FHAEAHJBNHAHSULM" "
+            --app-log-file-path=C:/Riot Games/League of Legends/Logs/LeagueClient Logs/2024-01-29T18-17-11_26232_LeagueClient.log" "
+            --app-pid=26232" "--output-base-dir=C:\Riot Games\League of Legends" "--no-proxy-server" "--ignore-certificate-errors
+
+            app port: 52227
+            remoting auth token: 1OgZLdWsTGNUIKKw250hVA
+
+
+            "C:/Riot Games/League of Legends/LeagueClientUx.exe" "--riotclient-auth-token=ZvL9oj9n5aJVjb7ydD0QCQ" "--riotclient-app-port=52227"
+             "--no-rads" "--disable-self-update" "--region=EUW" "--locale=en_GB" "--riotgamesapi-standalone" "--riotgamesapi-settings=eyJjbGllbnQt
+             Y29uZmlnIjp7InVybCI6Imh0dHBzOi8vY2xpZW50Y29uZmlnLnJwZy5yaW90Z2FtZXMuY29tIn0sImRlZmF1bHRfcmVnaW9uIjoiRVVXIiwiZ2xvYmFscyI6eyJzZXNzaW9uLWlk
+             IjoiYzQzMjE3ZDItNzU3MS0wMDRkLWI3ZDctNGI4MTdlMTc1NDUzIn0sInBhdGNobGluZV9pZCI6ImxpdmUiLCJwcm9kdWN0LWludGVncmF0aW9uIjp7ImFwcC11cGRhdGUtc3RhdH
+             VzIjoiQzovUHJvZ3JhbURhdGEvUmlvdCBHYW1lcy9NZXRhZGF0YS9sZWFndWVfb2ZfbGVnZW5kcy5saXZlL2xlYWd1ZV9vZl9sZWdlbmRzLmxpdmUudXBkYXRlLXN0YXR1cy5qc29uIiw
+             iaGVhcnRiZWF0IjoiQzovVXNlcnMva2FkYXIvQXBwRGF0YS9Mb2NhbC9SaW90IEdhbWVzL1Jpb3QgQ2xpZW50L0RhdGEvU2Vzc2lvbnMvYzQzMjE3ZDItNzU3MS0wMDRkLWI3ZDctNGI4MT
+             dlMTc1NDUzL1p2TDlvajluNWFKVmpiN3lkRDBRQ1EuaGVhcnRiZWF0Lmpzb24iLCJsb2NrZmlsZSI6IkM6L1Byb2dyYW1EYXRhL1Jpb3QgR2FtZXMvTWV0YWRhdGEvbGVhZ3VlX29mX2xlZ2Vu
+             ZHMubGl2ZS9sZWFndWVfb2ZfbGVnZW5kcy5saXZlLmxvY2tmaWxlIiwic2V0dGluZ3MiOiJDOi9Qcm9ncmFtRGF0YS9SaW90IEdhbWVzL01ldGFkYXRhL2xlYWd1ZV9vZl9sZWdlbmRzLmxpdmUv
+             bGVhZ3VlX29mX2xlZ2VuZHMubGl2ZS5wcm9kdWN0X3NldHRpbmdzLnlhbWwifSwicHJvZHVjdF9pZCI6ImxlYWd1ZV9vZl9sZWdlbmRzIiwicHVibGlzaGVyIjoicmlvdCIsInJlZ2lvbl9kYXRhIj
+             p7IkVVVyI6eyJhdmFpbGFibGVfbG9jYWxlcyI6WyJjc19DWiIsImRlX0RFIiwiZWxfR1IiLCJlbl9BVSIsImVuX0dCIiwiZW5fUEgiLCJlbl9TRyIsImVuX1VTIiwiZXNfQVIiLCJlc19FUyIsImVzX
+             01YIiwiZnJfRlIiLCJodV9IVSIsIml0X0lUIiwiamFfSlAiLCJrb19LUiIsInBsX1BMIiwicHRfQlIiLCJyb19STyIsInJ1X1JVIiwidGhfVEgiLCJ0cl9UUiIsInZpX1ZOIiwiemhfTVkiLCJ6aF9UV
+             yJdLCJkZWZhdWx0X2xvY2FsZSI6ImVuX0dCIiwicnNvIjp7ImNsaWVudCI6ImxvbCJ9fX0sInJpb3RjbGllbnQiOnsiYXBwLXBvcnQiOiI1MjIyNyIsImF1dGgtdG9rZW4iOiJadkw5b2o5bjVhSlZqY
+             jd5ZEQwUUNRIn0sInJpb3RnYW1lc2FwaSI6eyJwZXJzaXN0ZW5jZS1wYXRoIjoiQzovVXNlcnMva2FkYXIvQXBwRGF0YS9Mb2NhbC9SaW90IEdhbWVzL0xlYWd1ZSBvZiBMZWdlbmRzIn0sInJzb19hd
+             XRoIjp7ImF1dGhvcml6YXRpb24ta2V5IjoiZXcwS0lDQWdJQ0pqYjJSbElqb2dJbHBYVFhoUGJWWm1ZbnBXZDB4VlVtMVBWa0Y1WXpOd1EwNVhiSEZXUjJSS1ZsZGpkVnBVV25sT2VscGFWMFZXWms1Vl
+             ==" "--rga-lite" "--remoting-auth-token=CREi5RukV2T2Xr1X1FUeTQ" "--respawn-command=LeagueClient.exe" "--respawn-display-name=League of Legends" "--app-port=64726" "
+             --install-directory=C:\Riot Games\League of Legends" "--app-name=LeagueClient" "--ux-name=LeagueClientUx" "--ux-helper-name=LeagueClientUxHelper" "--log-dir=LeagueClient Logs" "--crash-reporting=crashpad" "--crash-environment=EUW1" "--crash-pipe=\\.\pipe\crashpad_29396_YMDAIOOARSGCCBPZ" "--app-log-file-path=C:/Riot Games/League of Legends/Logs/LeagueClient Logs/2024-01-29T18-43-27_29396_LeagueClient.log" "--app-pid=29396" "--output-base-dir=C:\Riot Games\League of Legends" "--no-proxy-server" "--ignore-certificate-errors"
+
+
+
+             XDDDD
+
+             Rune page recipe
+             /lol-perks/v1/pages
+             {
+               "autoModifiedSelections": [
+                 0
+               ],
+               "current": true,
+               "id": 1,
+               "isActive": true,
+               "isDeletable": true,
+               "isEditable": true,
+               "isValid": true,
+               "lastModified": 0,
+               "name": "string",
+               "order": 0,
+               "primaryStyleId": 8200,
+               "selectedPerkIds": [
+                 0
+               ],
+               "subStyleId": 0
+             }
+
+                {"primaryStyleId": 8200, "selectedPerkIds": [8229, 8226, 8210, 8237, 8009, 8014, 5008, 5008, 5003], "subStyleId": 8000}
