@@ -99,6 +99,23 @@ public class Main {
             runeIdMap.put("Scorch", 8237);
             runeIdMap.put("Waterwalking", 8232);
             runeIdMap.put("Gathering Storm", 8236);
+            //minor runes
+            /*
+            adaptiveyup
+            attack speedyup
+            cdr
+            movespeed
+            scalinghealth
+            tenacity
+            health
+             */
+            runeIdMap.put("Adaptive Force", 5008);
+            runeIdMap.put("Tenacity and Rune Reist", 5013);
+            runeIdMap.put("Attack Speed", 5005);
+            runeIdMap.put("Move speed", 5010);
+            runeIdMap.put("Scaling health", 5001);
+            runeIdMap.put("Flat health", 5011);
+            runeIdMap.put("Ability Haste", 5007);
         }
 
     public static void main(String[] args) throws IOException, InterruptedException, NoSuchAlgorithmException, KeyManagementException {
@@ -318,11 +335,14 @@ public class Main {
                 "\"primaryStyleId\": " + 8100 + "," +
                 "\"selectedPerkIds\": [" +
                 8112 + "," +
-                8216 + "," +
+                8126 + "," +
                 8138 + "," +
                 8135 + "," +
                 9101 + "," +
-                8014 +
+                8014 + "," +
+                5008 + "," +
+                5008 + "," +
+                5001 +
                 "]," +
                 "\"subStyleId\": " + 8000 +
                 "}";
