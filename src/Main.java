@@ -327,7 +327,7 @@ public class Main {
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create("https://127.0.0.1:" + port +"/lol-perks/v1/pages"))
                 .header("accept", "application/json")
-                .header("Authorization", "Basic" + authentication)
+                .header("Authorization", "Basic cmlvdDoxVUFvdUVUajcwOThQU3JzVGtHOFJB" )
                 .header("Content-Type", "application/json")
                 .method("POST", HttpRequest.BodyPublishers.ofString(requestBody))
                 .build();
