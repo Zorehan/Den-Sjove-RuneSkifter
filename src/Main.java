@@ -103,6 +103,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException, InterruptedException, NoSuchAlgorithmException, KeyManagementException {
         String ladosse = runCommand("wmic PROCESS WHERE name='LeagueClientUx.exe' GET commandline");
+        System.out.println(encoder.encodeToBase64("12FYuzVDk1"));
         String filePath = "filtreretruner.txt";
         Scanner scanner = new Scanner(System.in);
         System.out.println("Type 1 to get information");
@@ -299,6 +300,7 @@ public class Main {
 
 
     public static void injectRunePage(String runepageName, String authentication) throws NoSuchAlgorithmException, KeyManagementException, IOException, InterruptedException {
+        System.out.println(authentication);
         String apiBaseURL = "https://EUW1.api.riotgames.com";
         String endPoint = "/lol-perks/v1/pages";
         String fullurl = apiBaseURL + endPoint;
@@ -327,7 +329,7 @@ public class Main {
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create("https://127.0.0.1:" + port +"/lol-perks/v1/pages"))
                 .header("accept", "application/json")
-                .header("Authorization", "Basic cmlvdDoxVUFvdUVUajcwOThQU3JzVGtHOFJB" )
+                .header("Authorization", "Basic " + authentication )
                 .header("Content-Type", "application/json")
                 .method("POST", HttpRequest.BodyPublishers.ofString(requestBody))
                 .build();
