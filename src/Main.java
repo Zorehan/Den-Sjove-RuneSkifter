@@ -100,15 +100,7 @@ public class Main {
             runeIdMap.put("Waterwalking", 8232);
             runeIdMap.put("Gathering Storm", 8236);
             //minor runes
-            /*
-            adaptiveyup
-            attack speedyup
-            cdr
-            movespeed
-            scalinghealth
-            tenacity
-            health
-             */
+
             runeIdMap.put("Adaptive Force", 5008);
             runeIdMap.put("Tenacity and Rune Reist", 5013);
             runeIdMap.put("Attack Speed", 5005);
