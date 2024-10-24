@@ -30,9 +30,6 @@ C:/Riot Games/League of Legends/LeagueClientUx.exe" "--riotclient-auth-token=Zi4
              --install-directory=C:\Riot Games\League of Legends" "--app-name=LeagueClient" "--ux-name=LeagueClientUx" "--ux-helper-name=LeagueClientUxHelper" "--log-dir=LeagueClient Logs" "--crash-reporting=crashpad" "--crash-environment=EUW1" "--crash-pipe=\\.\pipe\crashpad_29396_YMDAIOOARSGCCBPZ" "--app-log-file-path=C:/Riot Games/League of Legends/Logs/LeagueClient Logs/2024-01-29T18-43-27_29396_LeagueClient.log" "--app-pid=29396" "--output-base-dir=C:\Riot Games\League of Legends" "--no-proxy-server" "--ignore-certificate-errors"
 
 
-
-             XDDDD
-
              Rune page recipe
              /lol-perks/v1/pages
              {

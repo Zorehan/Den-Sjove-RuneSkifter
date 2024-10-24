@@ -17,8 +17,7 @@ import java.util.regex.Pattern;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+
 public class Main {
 
     private static Encoding encoder = new Encoding();
@@ -99,8 +98,6 @@ public class Main {
             runeIdMap.put("Scorch", 8237);
             runeIdMap.put("Waterwalking", 8232);
             runeIdMap.put("Gathering Storm", 8236);
-            //minor runes
-
             runeIdMap.put("Adaptive Force", 5008);
             runeIdMap.put("Tenacity and Rune Reist", 5013);
             runeIdMap.put("Attack Speed", 5005);
@@ -124,7 +121,7 @@ public class Main {
             authToken = searchForAuthToken(ladosse);
             decodedPassword = encoder.encodeToBase64(authToken);
             String test = searchForRunePage(decodedPassword);
-            System.out.println(decodedPassword);
+            System.out.println("PORT: " + port + " AUTHTOKEN: " + authToken + " DECODED PASSWORD " + decodedPassword);
             System.out.println(test);
         }
         else if(Integer.parseInt(userInput) == 2)
@@ -347,7 +344,7 @@ public class Main {
                 .build();
 
         HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
-
+        System.out.println("POrt: " + port);
         System.out.println("Response code: " + response.statusCode());
         System.out.println("Response Body: " + response.body());
     }
